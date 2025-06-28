@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sarampión</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        section{
+            display: none;/*ocultar todas las secciones*/
+            padding: 60px 40px;
+            min-width: 100vh;
+            text-align: center;
+            color: white;
+        }
+        section:target{
+            display: block;
+        }
+        nav{
+            margin-top: 40px;/*separacion superior*/
+        }
+        nav a{
+            display: inline-block;/*botones en línea con dimensión*/
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s;
+            /*brindar una transición suave cuando se pasa el mouse*/
+        }
+        nav a:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        h1,h2{
+            margin-bottom: 20px;
+        }
+        
+        img, iframe{
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            margin-right: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);/*sombras*/
+        }
+        ul{
+            list-style: none;/*quitar viñeta por defecto*/
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        ul li::before{
+            content:"😀";
+        }
+        #slider1{background-color: rgb(233, 126, 13);}
+        #slider2{background-color: rgb(238, 87, 12);}
+        #slider3{background-color: rgb(248, 66, 11);}
+        #slider4{background-color: rgb(255, 0, 0);}
+        #slider5{background-color: rgb(233, 42, 42);}
+        #slider6{background-color: rgb(179, 12, 12);}
+        /*muestre la primera página*/
+        body:not(:has(:target)) #slider1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--Slider 1: Portada-->
+        <section id="slider1">
+        <img src="https://i.ytimg.com/vi/4d-aTJkBdYQ/maxresdefault.jpg" alt="Portada">
+        <h1>El Sarampión</h1>
+        <p>Bienvenidos a nuestra portal web</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sbXXcsPIHao?si=j-0sGaexhAdY1FsC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <nav>
+           <a href="#slider2">Siguiente</a>
+        </nav>
+    </section>
+    <!--Slider 2: ¿Que es el sarampión?-->
+    <section id="slider2">
+        <h1>¿Qué es el sarampión?</h1>
+        <p>El sarampión es una enfermedad viral muy contagiosa causada
+            por un virus del género Morbillivirus. Se transmite principalmente a
+            través de gotitas respiratorias al toser o estornudar. Afecta principalmente a niños,
+            aunque los adultos sin vacunación también pueden enfermarse. Es conocida por provocar fiebre alta,
+            erupción cutánea característica y síntomas respiratorios.
+        </p>
+        <img src="https://media.istockphoto.com/id/2152300024/es/foto/enfermedad-viral-del-sarampi%C3%B3n-piel-humana-cubierta-con-sarpullido-concepto-de-vacunaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=ewxmWvFrxNs_6f2VBSrmfQ7yhHg1NMlpchB7pxkbtYg=" alt="Sarampión">
+         <img src="https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/opinion/el-sarampion-regresa-causas-del-repunte-y-como-frenarlo/12221406-1-esl-MX/El-sarampion-regresa-causas-del-repunte-y-como-frenarlo.jpg" width="33%" alt="causas">
+        <nav>
+         <a href="#slider1">Anterior</a>
+        <a href="#slider3">Siguiente</a>
+        </nav>
+    </section>
+     <!--Slider 3: Contenido educativo-->
+    <section id="slider3">
+       <h2>Síntomas del Sarampión</h2>
+       <ul>
+            <li>Los síntomas comienzan entre 7 y 14 días después del contagio. </li>
+            <li>Primero aparecen fiebre alta, tos seca, secreción nasal y conjuntivitis. </li>
+            <li>Luego, se presentan manchas blancas dentro de la boca llamadas manchas de Koplik. </li>
+            <li>Después de unos días, surge una erupción rojiza que inicia en la cara y se extiende al resto del cuerpo.
+                Puede causar malestar general intenso.</li>
+       </ul>
+       <img src="https://media.istockphoto.com/id/1429059636/es/foto/m%C3%A9dico-revisando-la-piel-de-una-ni%C3%B1a-enferma-ni%C3%B1o-con-erupci%C3%B3n-roja-siendo-examinado-en-el.jpg?s=612x612&w=0&k=20&c=zL1vrQh149CykKsbqTMZe3vdyNRgHLWW9APRqIj0YIc=" alt="Síntomas">
+       <img src="https://media.istockphoto.com/id/2182528933/es/foto/brote-de-infecci%C3%B3n-por-el-virus-del-sarampi%C3%B3n-morbilli-erupci%C3%B3n-contagiosa.jpg?s=612x612&w=0&k=20&c=m-KAF4x78Gs9zIVCOvXW4bMdKpcDZRBZ3ynYn7z4418=" width="42%" alt="Síntomas del sarampión">
+       <nav>
+        <a href="#slider2">Anterior</a>
+        <a href="#slider4">Siguiente</a>
+       </nav>
+    </section>
+         <!--Slider 4: Complicaciones-->
+    <section id="slider4">
+       <h2>Complicaciones del sarampión</h2>
+       <p>Aunque muchos casos se recuperan sin problemas, el sarampión puede causar complicaciones graves,
+        sobre todo en niños pequeños, personas desnutridas o con sistemas inmunitarios debilitados.
+        Entre ellas están la neumonía, otitis media, diarrea severa, encefalitis (inflamación cerebral)
+        e incluso la muerte. La desnutrición y la falta de vitamina A agravan los riesgos.</p>
+        <img src="https://i.ytimg.com/vi/NtvrR3uAslw/maxresdefault.jpg" width="39%" alt="Complicaciones">
+       <img src="https://media.istockphoto.com/id/1448594366/es/foto/vacuna-contra-el-sarampi%C3%B3n-y-jeringa-sobre-fondo-azul.jpg?s=612x612&w=0&k=20&c=uf7qUz8U3Zs6xAiLflxN1TrJX_-79YrqYm-gYN07jcU=" alt="Brotes">
+        <img src="https://media.istockphoto.com/id/1208411331/es/vector/vector-de-concepto-infogr%C3%A1fico-del-sarampi%C3%B3n-humano-infectado-con-p%C3%A1pulas-en-la-piel.jpg?s=612x612&w=0&k=20&c=W2uocIVpWszR5IjvNorqoyscJQ3igdU9ByEHppEoqFc=" alt="Infografía">
+       <nav>
+        <a href="#slider3">Anterior</a>
+        <a href="#slider5">Siguiente</a>
+       </nav>
+    </section>
+             <!--Slider 5: Prevención-->
+    <section id="slider5">
+       <h2>Prevención del sarampión</h2>
+       <p>El diagnóstico se basa inicialmente en los
+        signos clínicos, sobre todo la erupción y las manchas de Koplik.
+        Para confirmar la infección, se pueden hacer pruebas de laboratorio como detección de
+        anticuerpos IgM específicos contra el virus del sarampión o análisis de material
+        genético viral mediante PCR. Esto es clave para la vigilancia epidemiológica y el control de brotes.</p>
+       <img src="https://media.istockphoto.com/id/1387135449/es/vector/conjunto-de-iconos-de-sarampi%C3%B3n-estilo-plano.jpg?s=612x612&w=0&k=20&c=0TYZFPpdLS9NG7ybUJJ2GnvKWnLIquJlXoJtqURsWxk=" alt="Prevención">
+        <img src="https://www.sanisidro.gob.ar/sites/default/files/img/6a48c1a245ba67f2f4479815dda5dd12.jpg" alt="Como prevenirlo">
+        <h2>Situación mundial del sarampión</h2>
+       <p>A pesar de los avances en vacunación, el sarampión sigue siendo un problema de salud pública
+        en varias regiones del mundo. En años recientes, se han producido brotes en países donde las
+        tasas de vacunación han disminuido. La Organización Mundial de la Salud trabaja para erradicarlo,
+        pero factores como conflictos, desinformación y falta de acceso a
+        servicios de salud dificultan su control.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sbXXcsPIHao?si=j-0sGaexhAdY1FsC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <nav>
+        <a href="#slider4">Anterior</a>
+        <a href="#slider6">Siguiente</a>
+       </nav>
+    </section>
+                 <!--Slider 6: Cierre-->
+    <section id="slider6">
+        <img src="https://media.istockphoto.com/id/2189559513/es/foto/gracias-en-espa%C3%B1ol-escrito-en-un-post-it-o-nota.jpg?s=612x612&w=0&k=20&c=xPI-TqhDzIm-W4uU6mK5bpr_GGtq70mfVvntAkmiblA=" alt="gracias">
+       <h2>¡Gracias por su atención!</h2>
+       <img src="https://www.shutterstock.com/image-vector/doctor-friendship-waving-happily-medical-600nw-2023889267.jpg" alt="doctores">
+       <p>Si quieres más información, puedes consultar la siguiente página: 
+        <a href="https://www.paho.org/es/temas/sarampion">OPS</a>
+       </p>
+       <nav>
+        <a href="#slider5">Anterior</a>
+        <a href="#slider1">Volver al inicio</a>
+       </nav>
+    </section>
+</body>
+</html>
